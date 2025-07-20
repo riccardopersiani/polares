@@ -1,3 +1,3 @@
-# polares labs
+# polares web3
 
 
