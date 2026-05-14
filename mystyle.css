@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
+html {
+  min-height: 100%;
+}
+
 body {
-  height: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #000000;
@@ -48,6 +52,7 @@ p {
 }
 
 footer {
+  flex-shrink: 0;
   text-align: center;
   padding: 1rem;
   font-size: 0.8rem;
@@ -155,4 +160,109 @@ nav ul li a:hover {
   color: #0f6292;
   font-size: 25px;
   text-decoration: none;
+}
+
+.clients-main {
+  max-width: 1020px;
+}
+
+.client-heading {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.client-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+}
+
+.client-logo-frame {
+  flex: 0 1 148px;
+  min-height: 96px;
+  padding: 0.85rem 0.7rem;
+  border: 1px solid #222;
+  background: #050505;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.client-logo-frame:hover {
+  border-color: #333;
+  background: #080808;
+}
+
+.client-logo {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.client-logo--ssv {
+  max-height: 38px;
+}
+
+.client-logo--dewiz {
+  width: min(100%, 142px);
+  height: auto;
+}
+
+.client-logo--sky {
+  max-height: 46px;
+}
+
+.client-logo--makerdao {
+  max-height: 30px;
+}
+
+.client-logo--token {
+  max-height: 42px;
+}
+
+.client-logo--monolith {
+  max-height: 62px;
+}
+
+.client-logo--pnetwork {
+  max-height: 58px;
+}
+
+.client-logo-with-label {
+  gap: 0.35rem;
+}
+
+.client-logo-with-label p {
+  display: inline-block;
+  font-size: 22px;
+}
+
+.client-logo--oraclize {
+  max-height: 48px;
+}
+
+.client-logo--vetrya {
+  max-height: 38px;
+}
+
+.client-logo--reinvest {
+  max-height: 38px;
+}
+
+.client-logo--wide {
+  max-height: 42px;
+}
+
+.client-logo--explus {
+  max-height: 54px;
+}
+
+@media (max-width: 520px) {
+  .client-logo-frame {
+    flex-basis: calc(50% - 0.35rem);
+    min-height: 92px;
+  }
 }
